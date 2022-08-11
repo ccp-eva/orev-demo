@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material Design CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+
+    <!-- Material Design CDN JS -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Typography -->
+    <link rel="stylesheet" href="https://use.typekit.net/ess7xmw.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./logos/favicon.ico" />
+    <link rel="icon" href="./logos/icon.svg" type="image/svg+xml" />
+    <title>oREV</title>
+
+    <!-- User Style/JavaScript -->
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="flex-wrapper">
+      <div class="flex-item">
+        <br />
+
+        <h1 class="heading">oREV: offener Rezeptiver Vokabeltest</h1>
+
+        <h3>
+          Vielen Dank für Ihr Interesse an unserem Vokabeltest für
+          Vorschulkinder. <br />
+        </h3>
+        <p>
+          Zitation: <br />
+          <!-- author list -->
+          Bohn, Prein, & Gagarina (2022).
+          <em>
+            <!-- title of paper -->
+            oREV: an Item Response Theory based open receptive vocabulary task
+            for 3 to 8-year-old children.
+          </em>
+          <br />
+          Preprint.
+        </p>
+
+        <br />
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <br />
+
+        <p>
+          <strong>
+            Bitte tragen Sie hier einen Namen oder Pseudonym ein:
+          </strong>
+        </p>
+
+        <label class="mdc-text-field mdc-text-field--filled">
+          <span class="mdc-text-field__ripple"></span>
+          <span class="mdc-floating-label" id="my-label-id"></span>
+          <input
+            class="mdc-text-field__input"
+            type="text"
+            aria-labelledby="my-label-id"
+            maxlength="10"
+          />
+          <span class="mdc-line-ripple"></span>
+        </label>
+
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-character-counter">0 / 10</div>
+        </div>
+
+        <br />
+
+        <p>
+          <strong> Möchten Sie eine Webcam-Aufnahme starten? </strong>
+        </p>
+
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-webcam-yes"
+              name="radios-webcam"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <br />
+          <label for="radio-webcam-yes">Ja</label>
+        </div>
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-webcam-no"
+              name="radios-webcam"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-webcam-no">Nein</label>
+        </div>
+
+        <br />
+        <br />
+
+        <p style="color: hsl(177, 100%, 21%)">
+          <strong>
+            <em>
+              Bitte beachten Sie, dass die Daten nach Abschluss der Studie als
+              .json Datei (und, soweit ausgewählt, als .webm Videodatei) auf
+              Ihrem Gerät lokal in dem Downloads Ordner gespeichert werden.
+            </em></strong
+          >
+        </p>
+
+        <br />
+
+        <div id="button-center-wrapper">
+          <button
+            type="button"
+            class="ccp-button confirm mdc-button mdc-button--raised"
+            id="button-center-item"
+            disabled
+          >
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label"><strong>ZUR STUDIE</strong></span>
+          </button>
+        </div>
+
+        <br />
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <br />
+
+        <div class="even-columns">
+          <div class="col">
+            <img id="logo-zas" src="./logos/Logo_Leibniz-ZAS.png" />
+          </div>
+          <div class="col">
+            <img id="logo-ccp" src="./logos/mp-logo-minerva-farbig-rgb.svg" />
+          </div>
+        </div>
+
+        <br />
+
+        <a href="https://www.eva.mpg.de/de/impressum/" target="_blank"
+          >Impressum</a
+        >
+
+        <!-- end flex-item -->
+      </div>
+
+      <!-- end flex-wrapper -->
+    </div>
+  </body>
+</html>

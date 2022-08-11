@@ -1,0 +1,124 @@
+:root {
+    --ccp-dark-blue: hsl(204, 39%, 26%);
+    --ccp-light-blue: hsl(195, 100%, 46%);
+    --ccp-minerva-green: hsl(177, 100%, 21%);
+    --ccp-light-green: hsl(64, 70%, 49%);
+    --mdc-theme-primary: var(--ccp-minerva-green);
+}
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: var(--ccp-minerva-green);
+    color: hsl(0 0% 10%);
+}
+
+.heading {
+    font-family: cholla-sans, sans-serif;
+    font-weight: 700;
+    letter-spacing: calc(20rem / 1000);
+    color: var(--ccp-minerva-green);
+    text-align: center;
+}
+
+.heading-em {
+    font-family: cholla-sans, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: calc(20rem / 1000);
+    color: var(--ccp-minerva-green);
+}
+
+.text {
+    font-family: pt-sans-narrow, sans-serif;
+    font-weight: 400;
+    color: hsl(0 0% 10%);
+}
+
+.text-strong {
+    font-family: pt-sans-narrow, sans-serif;
+    font-weight: 700;
+    color: hsl(0 0% 20%);
+}
+
+#flex-wrapper {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf5e7;
+}
+
+.flex-item {
+    width: 70vw;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+
+/* mail encryption */
+
+.cryptedmail:after {
+    content: attr(data-name) '@' attr(data-domain) '.' attr(data-tld);
+}
+
+.ccp-button {
+    background-color: var(--ccp-minerva-green) !important;
+    margin: 10px 0 !important;
+}
+
+.ccp-button:disabled {
+    background-color: hsl(177, 100%, 36%) !important;
+}
+
+/* ensures the increment/decrement arrows always display */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+#orev-example {
+    margin: 2%;
+    float: right;
+    border: 0.3vw solid darkgrey;
+    padding: 1%;
+    width: 30%;
+}
+
+#orev-example-caption {
+    float: right;
+    text-align: right;
+}
+
+#text-next-to-img {
+    display: inline;
+    text-align: center;
+    margin: 2%;
+}
+
+.mdc-text-field-character-counter{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.even-columns {
+    display: flex;
+    align-items: center;
+}
+
+.even-columns > * {
+   flex-basis: 100%;
+}
+
+.even-columns img{
+    width: 55%;
+    height: auto;
+    padding: 0%;
+ }
+ 

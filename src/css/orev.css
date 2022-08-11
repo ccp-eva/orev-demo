@@ -1,0 +1,110 @@
+:root {
+  --ccp-dark-blue: hsl(204, 39%, 26%);
+  --ccp-light-blue: hsl(195, 100%, 46%);
+  --ccp-minerva-green: hsl(177, 100%, 21%);
+  --ccp-light-green: hsl(64, 70%, 49%);
+  --mdc-theme-primary: var(--ccp-minerva-green);
+}
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color: var(--ccp-minerva-green);
+  margin: 0;
+  max-height: 100%;
+  color: black;
+}
+
+.heading {
+  /* font-family: cholla-sans, sans-serif; */
+  font-weight: 700;
+  letter-spacing: calc(20rem / 1000);
+  color: var(--ccp-minerva-green);
+  text-align: center;
+}
+
+#flex-wrapper {
+  width: 90vw;
+  height: 100vh;
+  margin: 0 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf5e7;
+}
+
+.flex-item {
+  width: 60vw;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+/* mail encryption */
+
+.cryptedmail:after {
+  content: attr(data-name) '@' attr(data-domain) '.' attr(data-tld);
+}
+
+.ccp-button {
+  background-color: var(--ccp-minerva-green) !important;
+  margin: 10px 0 !important;
+}
+
+.ccp-button:disabled {
+  background-color: hsl(177, 100%, 36%) !important;
+}
+
+#footer {
+  height: 8rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo {
+  max-height: 6rem;
+}
+
+.main-flex-sheet {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-sheet {
+  display: flex;
+  /* max-width: 800px; */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flex-sheet > div {
+  flex: 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* not for all img, otherwise also hover effect for logo... */
+
+.flex-sheet img {
+  width: 60%;
+  border: 0.3vw solid #000;
+}
+
+.flex-sheet img:hover {
+  border: 0.3vw solid grey;
+}
+
+/* top right bottom left */
+
+.upper-left,
+.lower-left {
+  margin: 2.5% 5% 2.5% 40%;
+}
+
+.upper-right,
+.lower-right {
+  margin: 2.5% 40% 2.5% 5%;
+}
