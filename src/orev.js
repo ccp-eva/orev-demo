@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    if (trialNr === 21) {
+    if (trialNr === 23) {
       downloadData(responseLog, responseLog.meta.subjID);
 
       // save the video locally
