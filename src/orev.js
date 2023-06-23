@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    if (trialNr === 23) {
+    if (trialNr === document.querySelectorAll('[id^="trial"]').length) {
       downloadData(responseLog, responseLog.meta.subjID);
 
       // save the video locally
