@@ -1,5 +1,4 @@
 import './css/landingpages.css';
-mdc.ripple.MDCRipple.attachTo(document.getElementById('button-center-item'));
 const button = document.getElementById('button-center-item');
 let continueIDOK = false;
 let continueWOK = false;

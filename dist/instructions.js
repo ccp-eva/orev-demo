@@ -1,0 +1,2 @@
+!function(){"use strict";const e=document.getElementById("button-center-item"),t=new URL(document.location.href).searchParams.get("ID")||"testID",n=new URL(document.location.href).searchParams.get("webcam")||!1;e.addEventListener("click",(e=>{e.preventDefault(),window.location.href=`./orderShort.html?ID=${t}&webcam=${n}`}),{capture:!1}),e.addEventListener("click",(e=>{e.preventDefault()}),{capture:!1})}();
+//# sourceMappingURL=instructions.js.map

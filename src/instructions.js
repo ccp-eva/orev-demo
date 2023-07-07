@@ -1,7 +1,6 @@
 import './css/landingpages.css';
 // import { hideURLparams } from './js/hideURLparams.js';
 
-mdc.ripple.MDCRipple.attachTo(document.getElementById('button-center-item'));
 const button = document.getElementById('button-center-item');
 
 // get and store id
