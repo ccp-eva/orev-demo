@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (trialNr === document.querySelectorAll('[id^="trial"]').length) {
-      downloadData(responseLog, responseLog.meta.subjID);
+      downloadData(responseLog.data, responseLog.meta.subjID);
 
       // save the video locally
       if (!responseLog.meta.iOSSafari && responseLog.meta.webcam) {
@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // give some time to create Video Blob
 
-        const day = new Date().toISOString().substr(0, 10);
-        const time = new Date().toISOString().substr(11, 8);
+        const day = new Date().toISOString().substring(0, 10);
+        const time = new Date().toISOString().substring(11, 19);
 
         setTimeout(
           () =>
