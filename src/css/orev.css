@@ -108,3 +108,18 @@ body {
 .lower-right {
   margin: 2.5% 40% 2.5% 5%;
 }
+
+.custom-button {
+  background-color: var(--ccp-minerva-green) !important;
+  margin: 10px 0 !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-button:disabled {
+  background-color: hsl(177, 100%, 36%) !important;
+}

@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
   //------------------------------------------------------------------
   const allAudios = document.getElementsByTagName('audio');
   const betweenTrials = document.getElementById('between-trials');
-  const button = document.getElementById('button-center-item');
+  const button = document.getElementById('orev-button');
   const speaker = document.getElementById('speaker');
   const headingFullscreen = document.getElementById('heading-fullscreen');
   const headingTestsound = document.getElementById('heading-testsound');
@@ -272,6 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
     await pause(2500);
 
     button.style.display = 'inline';
+    button.disabled = false;
   };
   startTrials();
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -13,53 +12,57 @@
     <!-- User Style/JavaScript -->
     <script src="./instructions.js" defer></script>
     <link rel="stylesheet" href="instructions.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="flex-wrapper">
-        <div class="flex-item">
-            <h1 class="heading">Das Wörterspiel</h1>
+      <div class="flex-item">
+        <h1 class="heading">Das Wörterspiel</h1>
 
-            <img id="orev-example" src="images/orev_example.png" />
+        <img id="orev-example" src="images/orev_example.png" />
 
-            <div id="text-next-to-img">
-                <p>
-                    Im folgenden Spiel sieht man immer 4 Bilder. <br> Bei jedem Bild fordert eine Stimme das Kind auf, eines der Bilder auszuwählen.
-                </p>
-      
-                <p>
-                    Durch Klicken auf das Lautsprechersymbol können Sie die Stimme erneut abspielen. Sobald das Kind ein Bild ausgewählt hat, klicken Sie auf "WEITER", um fortzufahren.
+        <div id="text-next-to-img">
+          <p>
+            Im folgenden Spiel sieht man immer 4 Bilder. <br />
+            Bei jedem Bild fordert eine Stimme das Kind auf, eines der Bilder
+            auszuwählen.
+          </p>
 
-                </p>
+          <p>
+            Durch Klicken auf das Lautsprechersymbol können Sie die Stimme
+            erneut abspielen. Sobald das Kind ein Bild ausgewählt hat, klicken
+            Sie auf "WEITER", um fortzufahren.
+          </p>
 
-                Bitte klicken Sie jetzt auf "WEITER" um fortzufahren.
-                </p>
+          <p>Bitte klicken Sie jetzt auf "WEITER" um fortzufahren.</p>
 
-                <div id="button-center-wrapper">
-                    <button type="button" class="ccp-button confirm foo-button mdc-button mdc-button--raised" id="button-center-item">
-              <div class="mdc-button__ripple"></div>
-              <span class="mdc-button__label"><strong>WEITER</strong></span>
-            </button>
-                </div>
-            </div>
-
-
-            <br />
-
-            <div class="even-columns">
-              <div class="col">
-                <img id="logo-zas" src="./logos/Logo_Leibniz-ZAS.png" />
-              </div>
-              <div class="col">
-                <img id="logo-ccp" src="./logos/mp-logo-minerva-farbig-rgb.svg" />
-              </div>
-            </div>
-    
-            <br />
-    
-            <a href="https://www.eva.mpg.de/de/impressum/" target="_blank"
-              >Impressum</a
+          <div class="button-center-wrapper">
+            <button
+              type="button"
+              class="custom-button"
+              id="instructions-button"
             >
+              <span><strong>WEITER</strong></span>
+            </button>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="even-columns">
+          <div class="col">
+            <img id="logo-zas" src="./logos/Logo_Leibniz-ZAS.png" />
+          </div>
+          <div class="col">
+            <img id="logo-ccp" src="./logos/mp-logo-minerva-farbig-rgb.svg" />
+          </div>
+        </div>
+
+        <br />
+
+        <a href="https://www.eva.mpg.de/de/impressum/" target="_blank"
+          >Impressum</a
+        >
 
         <!-- end flex-item -->
       </div>

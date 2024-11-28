@@ -56,21 +56,15 @@
           </strong>
         </p>
 
-        <label class="mdc-text-field mdc-text-field--filled">
-          <span class="mdc-text-field__ripple"></span>
-          <span class="mdc-floating-label" id="my-label-id"></span>
+        <div class="input-field">
           <input
-            class="mdc-text-field__input"
             type="text"
-            aria-labelledby="my-label-id"
-            maxlength="10"
+            maxlength="8"
+            id="participant-id"
+            name="participant-id"
           />
-          <span class="mdc-line-ripple"></span>
-        </label>
-
-        <div class="mdc-text-field-helper-line">
-          <div class="mdc-text-field-character-counter">0 / 10</div>
         </div>
+        <div id="id-counter">0 / 8</div>
 
         <br />
 
@@ -78,39 +72,15 @@
           <strong> Möchten Sie eine Webcam-Aufnahme starten? </strong>
         </p>
 
-        <div class="mdc-form-field">
-          <div class="mdc-radio">
-            <input
-              class="mdc-radio__native-control"
-              type="radio"
-              id="radio-webcam-yes"
-              name="radios-webcam"
-              unchecked
-            />
-            <div class="mdc-radio__background">
-              <div class="mdc-radio__outer-circle"></div>
-              <div class="mdc-radio__inner-circle"></div>
-            </div>
-          </div>
-          <br />
-          <label for="radio-webcam-yes">Ja</label>
-        </div>
-        <div class="mdc-form-field">
-          <div class="mdc-radio">
-            <input
-              class="mdc-radio__native-control"
-              type="radio"
-              id="radio-webcam-no"
-              name="radios-webcam"
-              unchecked
-            />
-            <div class="mdc-radio__background">
-              <div class="mdc-radio__outer-circle"></div>
-              <div class="mdc-radio__inner-circle"></div>
-            </div>
-          </div>
-          <label for="radio-webcam-no">Nein</label>
-        </div>
+        <label class="radio-label">
+          <input type="radio" name="webcam-options" value="true" />
+          Ja
+        </label>
+
+        <label class="radio-label">
+          <input type="radio" name="webcam-options" value="false" checked />
+          Nein
+        </label>
 
         <br />
         <br />
@@ -127,16 +97,25 @@
         </p>
 
         <br />
+        <div id="version-popup" class="version-popup">
+          <div class="popup-content">
+            <p>
+              <b> Wir haben die Website aktualisiert! <br /> </b>
+              Die neue Version ändert nicht die Funktionalität des oREV, <br />
+              sondern umfasst lediglich technische Updates.
+            </p>
+            <button class="custom-button" id="close-popup">Verstanden!</button>
+          </div>
+        </div>
 
-        <div id="button-center-wrapper">
+        <div class="button-center-wrapper">
           <button
             type="button"
-            class="ccp-button confirm mdc-button mdc-button--raised"
-            id="button-center-item"
+            class="custom-button"
+            id="start-button"
             disabled
           >
-            <div class="mdc-button__ripple"></div>
-            <span class="mdc-button__label"><strong>ZUR STUDIE</strong></span>
+            <span><strong>ZUR STUDIE</strong></span>
           </button>
         </div>
 
@@ -158,11 +137,7 @@
         <a href="https://www.eva.mpg.de/de/impressum/" target="_blank"
           >Impressum</a
         >
-
-        <!-- end flex-item -->
       </div>
-
-      <!-- end flex-wrapper -->
     </div>
   </body>
 </html>

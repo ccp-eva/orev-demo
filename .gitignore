@@ -5,6 +5,8 @@
 # data (hide all json files)
 data/*.json
 data/*.webm
+src/participant_data/*.json
+src/participant_data/*.webm
 
 # Stuff From gitignore.io (use the Edit link to edit this)
 # Created by https://www.toptal.com/developers/gitignore/api/node,macos,linux,vscode,windows,sublimetext
